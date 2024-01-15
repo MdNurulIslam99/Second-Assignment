@@ -22,6 +22,14 @@ body {
 #background-primary {
     background-color: #FF5400;
     color: #FFF;
+    border: 0;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 /* nav section style */
@@ -40,6 +48,7 @@ body {
     width: 50%;
 
 }
+
 .nav-content .menu-hamburger {
     display: none;
 }
@@ -110,43 +119,99 @@ body {
     border: 0;
 }
 
-.banner-content .banner-item img{
+.banner-content .banner-item img {
     height: 18px;
     width: 18px;
     margin-right: 5px;
+   
+}
+
+/* popular-tour-style */
+
+.popular-tour-container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-tour-title h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.popular-tour-content ul li p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popular-tour-title p {
+    color: rgba(19, 19, 24, 0.70);
+    padding: 8px;
+    width: 600px;
+}
+
+.popular-tour-image img {
+    width: 450px;
+    height: 350px;
+    border-radius: 16px;
 }
 
 /* responsive media query */
 @media screen and (max-width: 600px) {
-    
-  .nav-container img{
+
+    .nav-container img {
         height: 50px;
         width: 50px;
-    } 
-    .banner-image img {
-        height: 420px;
-        padding: 10px;
-        border-radius: 8px;                                               
-    }
-    .nav-container p {
-        font-size: 20px;
-        font-weight: 800;   
     }
 
-    .banner-title h1 {
+    .banner-image img {
+        height: 450px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-container p {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .banner-title h1,
+    .popular-tour-title h1 {
         font-size: 30px;
         font-weight: 600;
+        margin-left: 10px;
     }
+
     .banner-title p {
         font-size: 12px;
-      margin-right: 50px; 
+        margin-right: 50px;
     }
+
     .banner-content {
-        flex-direction: column;
         gap: 10px;
         width: 200px;
         margin-left: 100px;
     }
-    
+
+    .banner-content,
+    .popular-tour-container {
+        flex-direction: column;
+    }
+
+    .popular-tour-title p, .popular-tour-content ul li p {
+        font-size: 12px;
+        width: 400px;
+        text-align: justify;
+        padding-left: 50px;
+    }
+.btn-primary{
+    margin-left: 50px;
+}
+.popular-tour-image img{
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
+}
