@@ -288,7 +288,8 @@ body {
     font-weight: 800;
     margin-top: 20px;
 }
-.choose-container .hotel-info p{
+
+.choose-container .hotel-info p {
     color: #5A5A5D;
 }
 
@@ -311,7 +312,8 @@ body {
     font-weight: 800;
     margin-top: 20px;
 }
-.choose-container .hotel-info p{
+
+.choose-container .hotel-info p {
     color: #5A5A5D;
 }
 
@@ -334,13 +336,57 @@ body {
     font-size: 22px;
     font-weight: 800;
     margin-top: 20px;
-    
+
 }
-.choose-container .best-price p{
+
+.choose-container .best-price p {
     color: #5A5A5D;
 }
 
-/* responsive media query */
+/* Perfect-Place-styles */
+
+.Perfect-Place-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+.Perfect-Place-title h1 {
+    color: #131318;
+    font-size: 30px;
+    width: 350px;
+}
+
+.Perfect-Place-title p {
+    color: #5A5A5D;
+    margin-top: 10px;
+}
+
+.Perfect-Place-title ul li {
+    margin: 10px 0;
+    color: #131318;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.Perfect-Place-image img {
+    width: 400px;
+    height: 300px;
+}
+
+.Perfect-Place-image h3 {
+    position: absolute;
+    margin-top: -180px;
+    color: #FFF;
+    width: 400px;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+/* responsive media query for small device */
 @media screen and (max-width: 600px) {
 
     .nav-container img {
@@ -450,33 +496,28 @@ body {
         margin-left: 30%;
     }
 
-    
-
-    /*  */
-    
     .chose-title p {
         width: 300px;
         margin-left: 100px;
         margin-top: 10px;
     }
-    .choose-container{
+
+    .choose-container {
         flex-direction: column;
 
     }
+
     .choose-container .hotel-info {
         width: 400px;
         height: 150px;
     }
 
-    
     .choose-container .map-info {
         width: 400px;
         height: 150px;
         margin-top: 10px;
     }
-    
 
-    
     .choose-section .best-price {
         width: 400px;
         height: 180px;
@@ -484,8 +525,27 @@ body {
         margin-top: 30px;
     }
 
+    .Perfect-Place-container {
+       flex-direction: column;
+       margin-left: 30px;
+    }
+    
+    .Perfect-Place-image img {
+        width: 450px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .btn-primary{
+        margin-left: -10px;
+    }
+    
+    .Perfect-Place-image h3 {
+      margin-left: 30px;
+    }
+
 }
 
+/* responsive media query for large device */
 @media screen and (min-width: 992px) {
 
     .banner-title {
@@ -529,14 +589,6 @@ body {
         border-radius: 16px;
         margin-left: 100px;
     }
-
-
-
-
-    /* .destination-container-item1 img, .destination-container-item2 img, .destination-container-item3 img, .destination-container-item4 img, .destination-container-item5 img, .destination-container-item6 img, .destination-container-item7 img{
-        width: 500px;
-        height: 200px;
-    } */
 
     destination-container {
         flex-direction: column;
